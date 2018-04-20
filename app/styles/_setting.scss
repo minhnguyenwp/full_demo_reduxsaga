@@ -1,0 +1,61 @@
+// Font size
+$main-font-size: 14px;
+$sm-font-size: 12px;
+$m-font-size: 14px;
+$lg-font-size: 16px;
+$lg-1-font-size: 18px;
+$huge-font-size: 24px;
+
+// Colors
+$black: #000000;
+$white: #FFFFFF;
+$grey: #5C6670;
+$grey-1: #EDECF1;
+$grey-2: #646E81;
+$grey-3: #1E1717;
+$grey-4: #281E1D;
+$ddd-grey: #ddd;
+$grey-5: #CCCACA;
+$grey-6: #CCCACB;
+$light-grey: #A4A3A0;
+$blue: #009BDE;
+$blue-1: #0056b3;
+$dark-blue: #275B80;
+$red: #CC2A15;
+$green: #81A534;
+$yellow: #e79536;
+$orange: #F29200;
+$mid-night: #2E3B4E;
+$golden: #FFB819;
+
+$colors: (
+    'black': $black,
+    'white': $white,
+    'grey': $grey,
+    'light-grey': $light-grey,
+    'blue': $blue,
+    'dark-blue': $dark-blue,
+    'red': $red,
+    'green': $green,
+    'yellow': $yellow,
+    'orange' : $orange,
+    'mid-night': $mid-night
+);
+
+// Render color class
+@each $color_name, $color in $colors {
+    .#{$color_name} {
+        background-color: $color !important;
+    }
+
+    .#{$color_name}-text {
+        color: $color !important;
+    }
+
+    .#{$color_name}-br {
+        color: $color !important;
+    }
+}
+
+// Sidebar size
+$lg-sidebar-width: 240px;

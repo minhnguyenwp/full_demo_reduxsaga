@@ -1,0 +1,30 @@
+.footer {
+    background-color: #f0f0f4;
+    padding: 10px 0;
+    color: #808991;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    > p {
+        margin-bottom: 0;
+    }
+
+    .title {
+        padding: 10px;
+        font-weight: 700;
+    }
+
+    .link-item {
+        a {
+            color: #808991;
+        }
+        padding: 10px;
+    }
+
+    .copy-right {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

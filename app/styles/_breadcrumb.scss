@@ -1,0 +1,55 @@
+.breadcrumb-body {
+    border-bottom: 4px solid #555;
+
+    .breadcrumb {
+        position: relative;
+        padding: 0;
+        background-color: $white;
+        margin: 0;
+
+        .breadcrumb-item {
+            position: relative;
+            padding: 15px 15px 15px 25px;
+
+            + .breadcrumb-item {
+                &::before {
+                    content: '';
+                    display: none;
+                }
+
+                a {
+                    &::after,
+                    &::before {
+                        content: '';
+                        width: 1px;
+                        height: 50%;
+                        background-color: $light-grey;
+                        position: absolute;
+                        padding: 0;
+                        left: 0;
+                    }
+
+                    &::after {
+                        transform: skewX(35deg);
+                        top: 0;
+                    }
+
+                    &::before {
+                        transform: skewX(-35deg);
+                        bottom: 0;
+                    }
+                }
+            }
+
+            a {
+                color: $grey;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,160 @@
+.content-wrapper {
+    margin-left: $lg-sidebar-width;
+}
+
+.main-content {
+    padding: 30px;
+}
+
+.application-page {
+    .application-title {
+        color: $grey;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ddd;
+        font-weight: 550;
+
+        button {
+            font-weight: bold;
+        }
+        .sub-title {
+            font-size: $lg-1-font-size;
+        }
+    }
+
+    .section {
+        padding: 20px 0;
+        border-bottom: 1px solid #ddd;
+
+        .title {
+            font-size: $lg-1-font-size;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: $grey;
+        }
+
+        .highcharts-credits {
+            display: none;
+        }
+    }
+
+    .score-section {
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+
+        .col-4 + .col-4 {
+            position: relative;
+            padding-left: 100px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background: $light-grey;
+                top: 0;
+                right: 100%;
+            }
+        }
+
+        .score-item {
+            display: table;
+            width: 100%;
+
+            .text,
+            .value {
+                color: $grey-4;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .text {
+                width: 100px;
+                font-weight: 700;
+            }
+
+            .number {
+                border: 2px solid;
+                padding: 13px 12px;
+                display: inline-block;
+                border-radius: 100%;
+                font-weight: 700;
+                font-size: 16px;
+                min-width: 55px;
+                text-align: center;
+            }
+        }
+
+        .time {
+            margin: 20px 0;
+        }
+
+        .summary {
+            margin: 20px 0;
+            font-size: $lg-font-size;
+        }
+    }
+
+    .issue-severity-section {
+    	.list-inline {
+    		li {
+    			margin-right: 0;
+    			a {
+    				color: #333;
+    				font-weight: 600;
+    				background-color: #EDECF1;
+    			}
+
+    			&.active {
+    				a {
+	    				color: #fff;
+	    				font-weight: 600;
+                        background-color: #333;
+	    			}
+                }
+                &:first-child {
+                    a.btn {
+                        @include border-radius-separate(3px, 0, 3px, 0);
+                    }
+                }
+                &:last-child {
+                    a.btn {
+                        @include border-radius-separate(0, 3px, 0, 3px);
+                    }
+                }
+    		}
+    		.list-inline-item:not(:last-child) {
+    			border-right: solid 1px #fff;
+    		}
+    	}
+        .issue-item {
+            text-align: center;
+
+            .number {
+                font-size: 48px;
+                font-weight: bold;
+            }
+
+            .desc {
+                font-size: $lg-font-size;
+                color: $light-grey;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .issue-category-section {
+        .category-chart {
+            height: 400px;
+            margin: 0 auto;
+        }
+    }
+
+    .issue-tool-section {
+        border: 0;
+
+        .tool-chart {
+            height: 400px;
+            margin: 0 auto;
+        }
+    }
+}

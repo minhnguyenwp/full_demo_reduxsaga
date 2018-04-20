@@ -1,0 +1,133 @@
+.organization-page {
+    .aside {
+        border-right: 1px solid $light-grey;
+        height: 100vh;
+        position: relative;
+        top: -20px;
+        padding-top: 20px;
+
+        .item {
+            font-weight: 500;
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: $grey-3;
+            display: block;
+
+            &:hover,
+            &.active {
+                color: $blue;
+            }
+        }
+    }
+
+    .section {
+        .section-title {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    }
+
+    .users {
+        th,
+        tr {
+            width: 30%;
+
+            &:last-child {
+                width: 20%;
+            }
+        }
+
+        tr:hover {
+            cursor: pointer;
+
+            .actions {
+                display: block;
+            }
+        }
+
+        .actions {
+            display: none;
+
+            .button {
+                float: right;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .role-detail-section {
+        .section-title {
+            padding-bottom: 10px;
+            border-bottom: 1px solid $light-grey;
+        }
+
+        .detail-content {
+            .title {
+                color: $grey-3;
+                font-size: 18px;
+                font-weight: 500;
+                border-top: 1px solid $light-grey;
+                padding-top: 10px;
+
+                &:first-child {
+                    padding-top: 0;
+                    border-top: 0;
+                }
+            }
+
+            .role-name {
+                margin-top: 20px;
+                font-weight: 500;
+
+                input {
+                    font-weight: normal;
+                    width: 280px;
+                }
+            }
+
+            .action {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .user-detail-section {
+        .section-title {
+            padding-bottom: 10px;
+        }
+
+        .detail-content {
+            .user-info {
+                margin-top: 20px;
+                font-weight: 500;
+
+                input {
+                    font-weight: normal;
+                    width: 280px;
+                }
+            }
+
+            .user-availability,
+            .user-roles {
+                .title {
+                    font-weight: 500;
+                }
+            }
+
+            .action {
+                margin-top: 20px;
+
+                .btn {
+                    margin-right: 10px;
+                }
+            }
+
+            .btn-unlock {
+                margin-left: 10px;
+            }
+        }
+    }
+}
